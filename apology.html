@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Apology</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Comic Sans MS', Arial, sans-serif;
+            background-color: #ffe6f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6699;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        .bunny {
+            max-width: 200px;
+            height: auto;
+            margin: 20px 0;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 1.1em;
+            cursor: pointer;
+            background-color: #99ccff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #77aaff;
+        }
+        .heart {
+            color: #ff6699;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oopsie! I'm Super Duper Sorry! <span class="heart">♥</span></h1>
+    <p>Oh no, I made a big mistake, and my heart feels all wobbly! Please forgive this silly bunny for messing up Seemab. Can we be friends again?</p>
+    <img class="bunny" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2E2OGZhNjg5NzVhY2M4YzZiM2E5NDhmYjE5MDVhY2E3NGZiYzVhZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6ZtaO9BZHcOjmErm/giphy.gif" alt="Cute Bouncing Bunny" onerror="this.src='https://via.placeholder.com/200x200?text=Bunny+Not+Found';">
+    <p>I promise to make it up with lots of hugs and smiles! <span class="heart">♥</span></p>
+    <button onclick="playCheerfulTune()">Play a Happy Tune!</button>
+
+    <script>
+        function playCheerfulTune() {
+            alert("No audio file provided yet! Imagine a cheerful tune playing to brighten your day! Add an <audio> tag like <audio id='tune' src='happy.mp3'></audio> to enable music.");
+            // To add music, include: <audio id="tune" src="happy.mp3"></audio>
+            // Then use: document.getElementById('tune').play();
+        }
+    </script>
+</body>
+</html>
